@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sans 78 - Color Palette Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sans 78</h1>
+            <p class="subtitle">Random Color Palette Generator</p>
+        </header>
+
+        <main>
+            <div class="palette-container">
+                <div class="color-box" id="color1"></div>
+                <div class="color-box" id="color2"></div>
+                <div class="color-box" id="color3"></div>
+                <div class="color-box" id="color4"></div>
+                <div class="color-box" id="color5"></div>
+            </div>
+
+            <div class="controls">
+                <button id="generateBtn" class="btn btn-primary">Generate Palette</button>
+                <button id="exportBtn" class="btn btn-secondary">Export Colors</button>
+            </div>
+
+            <div class="color-codes">
+                <div class="code-item">
+                    <span class="code-label">Color 1:</span>
+                    <input type="text" id="code1" readonly>
+                    <button class="copy-btn" data-target="code1">Copy</button>
+                </div>
+                <div class="code-item">
+                    <span class="code-label">Color 2:</span>
+                    <input type="text" id="code2" readonly>
+                    <button class="copy-btn" data-target="code2">Copy</button>
+                </div>
+                <div class="code-item">
+                    <span class="code-label">Color 3:</span>
+                    <input type="text" id="code3" readonly>
+                    <button class="copy-btn" data-target="code3">Copy</button>
+                </div>
+                <div class="code-item">
+                    <span class="code-label">Color 4:</span>
+                    <input type="text" id="code4" readonly>
+                    <button class="copy-btn" data-target="code4">Copy</button>
+                </div>
+                <div class="code-item">
+                    <span class="code-label">Color 5:</span>
+                    <input type="text" id="code5" readonly>
+                    <button class="copy-btn" data-target="code5">Copy</button>
+                </div>
+            </div>
+
+            <div class="stats">
+                <p>Generated: <span id="count">0</span> palettes</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Sans 78 © 2025 | Color Palette Generator</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
